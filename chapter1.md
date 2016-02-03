@@ -32,8 +32,15 @@ However, you can't save your changes yet. For that you need to do a few more thi
 
 2. Edit the `index.html` file and, in the script tag at the bottom, replace the string `simplyedit-demo-key` with your new trial key.
 
-3. Make sure that the directories `data/` and `images/` can be written to by the webserver. How to do this depends on where you host your site. Usually you can change the 'owner' of the file to a specific username like `www-data`. Under no circumstance must you make these directories writable by everyone. That is just asking for trouble.
+3. Make sure that the directories `data/` and `images/` can be written to by the webserver. How to do this depends on where you host your site. Usually you can change the 'owner' of the file to a specific username like `www-data`. Under no circumstance must you make these directories writable by everyone. That is just asking for trouble. If you have trouble here, ask the support desk of your website hosting provider for help, that's what you pay them for.
  
+If you have gotten this far, open the website again and start editing. Now when you press save, your changes are stored. Go ahead and reload the site. 
 
+##Where is your data?
 
+SimplyEdit works different from almost all other CMS systems. Instead of a lot of code and a database that all run on the server to create and render your page. A SimplyEdit website only stores your data in a single file on the server. When you open your website, the HTML page contains just enough information to tell SimplyEdit what your site design looks like. Then SimplyEdit grabs your data and uses this data to fill in the placeholders in your HTML and render your website.
+
+This all happens in your browser, not on the server.
+
+So if you take a look behind the curtains and view the source of your webpage, you'll see that none of the editing changes you made are actually in there. All these changes are instead stored in the file `data/data.json`. If you open this file, you'll see all the changes you made. Now forget about it and close it. You don't need it anymore.
 
