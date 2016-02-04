@@ -55,7 +55,7 @@ No problem, we'll just make three templates:
     <div class="slices" data-simply-list="Content">
         <template data-simply-template="Hero Image">
             <div class="hero">
-                <img src="hero.jpg" alt="">
+                <img src="hero.jpg" alt="" data-simply-field="image">
             </div>
         </template>
         <template data-simply-template="Quote">
@@ -69,11 +69,22 @@ No problem, we'll just make three templates:
             <div class="text">
                 <div class="constrain-width">
                     <h2 data-simply-field="subtitle">A subtitle</h2>
-                    <p>And some text</p>
+                    <div data-simply-field="text">
+                        <p>And some text</p>
+                    </div>
                 </div>
             </div>
         </template>
     </div>
 ```
 
-And you're done.
+And you're done. If you edit the page now, you'll see an empty list again. But if you press it, the 'Add' button now has a little arrow below it:
+
+![(Add a listitem with templates)](listitem-add-templates.png)
+
+If you press it, your templates will show up:
+
+![(Add a listitem, select a template)](listitem-add-templates-toolbar.png)
+
+We've added a `data-simply-list` named 'Content'. This list has three templates. To tell them apart, we've given them each a name with the `data-simply-template` attribute.
+
