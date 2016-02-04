@@ -72,3 +72,7 @@ It will appear almost transparent untill you hover the mouse over the menu item,
 
 ![(List item - Toolbar)](listitem-toolbar.png)
 
+Pressing 'Add' inserts a new menu item, pressing 'Delete' removes it again. You now have a way to create as many menu items as you like, and remove them again later.
+
+If you save the page, the `data.json` file will contain something like this:
+
