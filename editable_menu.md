@@ -61,3 +61,14 @@ If the list is empty, nothing is shown. Only when you are editing the page, you'
 If you click or touch it, a toolbar will appear:
 
 ![(Empty list - Add)](emptylist-add.png)
+
+Now press the add button and you will see 'Menu item' appear and the (Empty list) message disappears.
+
+In addition you'll see an icon above and to the left of the new menu item, like this:
+
+![(List item)](listitem.png)
+
+It will appear almost transparent untill you hover the mouse over the menu item, or touch it. If you press the icon, you get a new toolbar like this:
+
+![(List item - Toolbar)](listitem-toolbar.png)
+
