@@ -38,7 +38,7 @@ So instead, we'll use a new trick: `data-simply-list`.
 
 ```html
 <nav>
-    <ul class="nav" data-simply-list="Main Menu">
+    <ul class="nav" data-simply-path="/index.html" data-simply-list="Main Menu" >
         <template>
             <li>
                 <a href="/index.html" data-simply-field="item">Menu item</a>
@@ -47,6 +47,10 @@ So instead, we'll use a new trick: `data-simply-list`.
     </ul>
 </nav>
 ```
+
+We've added two new attributes and a `<template>` tag.
+
+The path is normally automatically retrieved from the URL of the page you are editing. But in the case of the menu, you want the same menu on every page. The `data-simply-path` makes sure that the main menu is shared by all pages.
 
 The `data-simply-list` attribute tells SimplyEdit that the contents are a list of things. But SimplyEdit doesn't know what is in these things, unless you tell it. This is where the `<template>` comes in. 
 
