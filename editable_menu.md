@@ -38,7 +38,7 @@ So instead, we'll use a new trick: `data-simply-list`.
 
 ```html
 <nav>
-    <ul class="nav" data-simply-list="main menu">
+    <ul class="nav" data-simply-list="Main Menu">
         <template>
             <li>
                 <a href="/index.html" data-simply-field="item">Menu item</a>
@@ -75,4 +75,29 @@ It will appear almost transparent untill you hover the mouse over the menu item,
 Pressing 'Add' inserts a new menu item, pressing 'Delete' removes it again. You now have a way to create as many menu items as you like, and remove them again later.
 
 If you save the page, the `data.json` file will contain something like this:
+
+```js
+{
+    "/index.html" : {
+        "Page Title": "Your page title.",
+        "Page Body": "<p>Your page contents.</p>",
+        "Main Menu": [
+            {
+                "item": {
+                    "href": "/index.html",
+                    "contents": "Menu item 1"
+                }
+            }
+            {
+                "item": {
+                    "href": "/page2.html",
+                    "contents": "Menu item 2"
+                }
+            }
+        ]
+    }
+}
+```
+
+SimplyEdit knows that "Main Menu" is a list. Because of the `<template>`, it also knows that each element of the list has a field called `item` and that this field is an anchor tag. So SimplyEdit stores the `href` attribute and the contents of each item as well.
 
