@@ -1,2 +1,64 @@
 # An editable menu
 
+The previous chapter showed how to create your own design and make it editable. This chapter expands on that and shows how to make your site's menu editable as well.
+
+Most navigation menu's look something like this, in HTML:
+
+```html
+<nav>
+    <ul class="nav">
+        <li>
+            <a href="/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/page2.html">Page 2</a>
+        </li>
+    </ul>
+</nav>
+```
+
+Using the same trick as in the previous chapter would turn this into:
+
+```html
+<nav>
+    <ul class="nav">
+        <li>
+            <a href="/index.html" data-simply-field="menu1">Home</a>
+        </li>
+        <li>
+            <a href="/page2.html" data-simply-field="menu2">Page 2</a>
+        </li>
+    </ul>
+</nav>
+```
+
+This will work, but there is a problem: You can't remove a menu item, or add a new one. You can only change the menu items that are there.
+
+So instead, we'll use a new trick: `data-simply-list`.
+
+```html
+<nav>
+    <ul class="nav" data-simply-list="main menu">
+        <template>
+            <li>
+                <a href="/index.html" data-simply-field="item">Menu item</a>
+            </li>
+        </template>
+    </ul>
+</nav>
+```
+
+The `data-simply-list` attribute tells SimplyEdit that the contents are a list of things. But SimplyEdit doesn't know what is in these things, unless you tell it. This is where the `<template>` comes in. 
+
+SimplyEdit sees the template tag, and takes its contents and applies it to each element in the list. Just as if each element was a seperate page.
+
+So you can use a `data-simply-field` inside a list template, just like on any other tag in the page.
+
+If the list is empty, nothing is shown. Only when you are editing the page, you'll see a message like this in the place of the empty list:
+
+![(Empty list)](emptylist.png)
+
+If you click or touch it, a toolbar will appear:
+
+![(Empty list - Add)](emptylist-add.png)
+
