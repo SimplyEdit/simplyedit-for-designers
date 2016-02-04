@@ -40,10 +40,11 @@ Go ahead, edit the page and reload it. You'll see that your content is safely st
 
 ```js
 {
-    "/" : {
+    "/index.html" : {
         "Page Title": "Your page title.",
         "Page Body": "<p>Your page contents.</p>"
     }
 }
 ```
 
+SimplyEdit has taken the contents of your fields and stored them with the names you chose.
