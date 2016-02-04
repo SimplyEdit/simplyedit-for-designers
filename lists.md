@@ -68,7 +68,7 @@ No problem, we'll just make three templates:
         <template data-simply-template="Text">
             <div class="text">
                 <div class="constrain-width">
-                    <h2>A subtitle</h2>
+                    <h2 data-simply-field="subtitle">A subtitle</h2>
                     <p>And some text</p>
                 </div>
             </div>
