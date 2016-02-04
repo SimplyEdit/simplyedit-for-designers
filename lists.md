@@ -38,3 +38,42 @@ The HTML that came from your design looks someting like this:
         </div>
     </div>
 ```
+
+The class `constrain-width` makes sure the contents don't grow wider than, say, 960 pixels. The here image is meant to go full width, so it doesn't have this class.
+
+Now we turn this into a list. But there is one problem. The list is not a list of one thing. There are three things that can be in this list.
+
+No problem, we'll just make three templates:
+
+```html
+<body>
+    <header>
+        <div class="constrain-width">
+            <h1 data-simply-field="Page title">Page title</h1>
+        </div>
+    </header>
+    <div class="slices" data-simply-list="Content">
+        <template data-simply-template="Hero Image">
+            <div class="hero">
+                <img src="hero.jpg" alt="">
+            </div>
+        </template>
+        <template data-simply-template="Quote">
+            <div class="quote">
+                <div class="constrain-width">
+                    <blockquote>An inspirational quote</blockquote>
+                </div>
+            </div>
+        </template>
+        <template data-simply-template="Text">
+            <div class="text">
+                <div class="constrain-width">
+                    <h2>A subtitle</h2>
+                    <p>And some text</p>
+                </div>
+            </div>
+        </template>
+    </div>
+```
+
+And you're done.
