@@ -10,3 +10,31 @@ A content slice is a horizontal section of your webpage, that has its own design
 
 SimplyEdit makes editing content slices easier than ever.
 
+The following example uses a design with three different content slices: A full width hero image, a quote and a text slice with a title.
+
+The HTML that came from your design looks someting like this:
+
+```html
+<body>
+    <header>
+        <div class="constrain-width">
+            <h1>Page title</h1>
+        </div>
+    </header>
+    <div class="slices">
+        <div class="hero">
+            <img src="hero.jpg" alt="">
+        </div>
+        <div class="quote">
+            <div class="constrain-width">
+                <blockquote>An inspirational quote</blockquote>
+            </div>
+        </div>
+        <div class="text">
+            <div class="constrain-width">
+                <h2>A subtitle</h2>
+                <p>And some text</p>
+            </div>
+        </div>
+    </div>
+```
