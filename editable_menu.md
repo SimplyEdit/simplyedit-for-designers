@@ -61,4 +61,3 @@ If the list is empty, nothing is shown. Only when you are editing the page, you'
 If you click or touch it, a toolbar will appear:
 
 ![(Empty list - Add)](emptylist-add.png)
-
