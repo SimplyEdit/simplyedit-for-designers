@@ -1,4 +1,4 @@
-# Do more with lists
+# Slice your content
 
 The previous chapter showed how to use `data-simply-list` to build a main menu. This chapter will show some more uses for lists.
 
