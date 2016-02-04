@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [First Steps](chapter1.md)
-* Design with SimplyEdit
+* [Design with SimplyEdit](design_with_simplyedit.md)
 
