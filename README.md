@@ -1,7 +1,7 @@
 SimplyEdit
 ==========
 
-SimplyEdit is a revolutionary new way of working with your website. It is not just an HTML editor. It is almost a complete CMS (Content Management System) that runs in your browser.
+SimplyEdit is a revolutionary new way of creating and editing websites. It is not just an HTML editor. It is almost a complete CMS (Content Management System) that runs in your browser.
 
 But you don't need any programming skills to use it. All you need to know is HTML and CSS. 
 
