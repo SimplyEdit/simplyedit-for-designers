@@ -34,3 +34,16 @@ You are not limited to predefined names for the fields. You can use as many or f
 - don't use &lt; or &gt;
 - anything else is ok 
 
+This is it. You are done. There is no programming, no need to register fields or create specific content types. You HTML is your template. Your template is all you need.
+
+Go ahead, edit the page and reload it. You'll see that your content is safely stored and retrieved. If you want to take a peek under the hood, you can open the `data.json` file in a text editor and you'll see something like this:
+
+```js
+{
+    "/" : {
+        "Page Title": "Your page title.",
+        "Page Body": "<p>Your page contents.</p>"
+    }
+}
+```
+
