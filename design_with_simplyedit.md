@@ -8,6 +8,8 @@ HTML works by inserting tags into your content. These tags tell the browser how 
 
 SimplyEdit uses '*data attributes*' to make it work. It is your job as the designer to add these at the correct spot in the HTML.
 
+##data-simply-field
+
 Some examples:
 
 ```html
@@ -21,7 +23,8 @@ So the `index.html` is now a *template* instead of the actual webpage.
 ```html
 <body>
     <header>
-        <h1 data-simply-field="Page Title">The title goes here</h1>
+        <h1 data-simply-field="Page Title">
+        The title goes here</h1>
     </header>
     <div id="main" data-simply-field="Page Body">
         Your page content goes here.
