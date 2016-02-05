@@ -34,11 +34,13 @@ Using the same trick as in the previous chapter would turn this into:
 
 This will work, but there is a problem: You can't remove a menu item, or add a new one. You can only change the menu items that are there.
 
+##data-simply-list
+
 So instead, we'll use a new trick: `data-simply-list`.
 
 ```html
 <nav>
-    <ul class="nav" data-simply-path="/index.html" data-simply-list="Main Menu" >
+    <ul class="nav" data-simply-list="Main Menu">
         <template>
             <li>
                 <a href="/index.html" data-simply-field="item">Menu item</a>
@@ -48,9 +50,7 @@ So instead, we'll use a new trick: `data-simply-list`.
 </nav>
 ```
 
-We've added two new attributes and a `<template>` tag.
-
-The path is normally automatically retrieved from the URL of the page you are editing. But in the case of the menu, you want the same menu on every page. The `data-simply-path` makes sure that the main menu is shared by all pages.
+We've added a new attribute and a `<template>` tag.
 
 The `data-simply-list` attribute tells SimplyEdit that the contents are a list of things. But SimplyEdit doesn't know what is in these things, unless you tell it. This is where the `<template>` comes in. 
 
@@ -78,6 +78,18 @@ It will appear almost transparent untill you hover the mouse over the menu item,
 
 Pressing 'Add' inserts a new menu item, pressing 'Delete' removes it again. You now have a way to create as many menu items as you like, and remove them again later.
 
+##data-simply-path
+
+There is one problem though: Each page has its own menu, if you edit the menu on page a, the menu on page b won't be changed. To fix that SimplyEdit has another attribute `data-simply-path`.
+
+```html
+<nav>
+    <ul class="nav" data-simply-list="Main Menu"
+    data-simply-path="/index.html">
+```
+
+The path is normally automatically retrieved from the URL of the page you are editing. But in the case of the menu, you want the same menu on every page. The `data-simply-path` makes sure that the main menu is shared by all pages. The content for the Main menu is now always saved to and retrieved from the main page.
+
 If you save the page, the `data.json` file will contain something like this:
 
 ```js
@@ -104,4 +116,18 @@ If you save the page, the `data.json` file will contain something like this:
 ```
 
 SimplyEdit knows that "Main Menu" is a list. Because of the `<template>`, it also knows that each element of the list has a field called `item` and that this field is an anchor tag. So SimplyEdit stores the `href` attribute and the contents of each item as well.
+
+##data-simply-sortable
+
+The final trick is the `data-simply-sortable` attribute. If you add this attribute to a list, SimplyEdit will allow you to reorder the list using drag and drop.
+
+```html
+<nav>
+    <ul class="nav" data-simply-list="Main Menu"
+    data-simply-path="/index.html" data-simply-sortable>
+```
+
+Start the editor and press-and-hold or touch-and-hold a list item. The item will slant a bit to tell you that it is ready to be moved. Then drag it around and drop it where you want.
+
+The editor is smart about it, it only allows dragging the item in a direction that is usefull. So a menu is usually only draggable horizontally, sidebar menu's only vertically. Very rarely its both. SimplyEdit will figure this out itself, you don't need to do anything for this.
 
