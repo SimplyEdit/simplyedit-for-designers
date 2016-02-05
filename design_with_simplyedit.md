@@ -18,7 +18,7 @@ Some examples:
 
 This tells SimplyEdit that the `<h1>` tag should have the content named `title`. The text "This is a title" is only a placeholder now. SimplyEdit will get the data for this page, retrieve the field with the name 'title' and overwrite the placeholder with the fields content.
 
-So the `index.html` is now a *template* instead of the actual webpage.
+So the `index.html` is now a *template* instead of the actual web page.
 
 ```html
 <body>
