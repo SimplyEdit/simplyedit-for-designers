@@ -54,7 +54,7 @@ We've added a new attribute and a `<template>` tag.
 
 The `data-simply-list` attribute tells SimplyEdit that the contents are a list of things. But SimplyEdit doesn't know what is in these things, unless you tell it. This is where the `<template>` comes in. 
 
-SimplyEdit sees the template tag, and takes its contents and applies it to each element in the list. Just as if each element was a seperate page.
+SimplyEdit sees the template tag, and takes its contents and applies it to each element in the list. Just as if each element was a separate page.
 
 So you can use a `data-simply-field` inside a list template, just like on any other tag in the page.
 
