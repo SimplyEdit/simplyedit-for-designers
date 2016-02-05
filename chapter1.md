@@ -26,7 +26,7 @@ Just unzip the contents directly in to your website root directory. You'll see s
 
 First open the site in your webbrowser. It is just a standard website. Now click on the 'Edit me' button that should be in the top right corner. Now you can edit your website.
 
-However, you can't save your changes yet. For that you need to do a few more things:
+You can't save your changes yet. For that you need to do a few more things:
 
 1. Get a trial key from https://simplyedit.io/. You can get one for free, it will work for 30 days. You can only get a trial key once for each seperate domain though.
 
