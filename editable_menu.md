@@ -72,7 +72,7 @@ In addition you'll see an icon above and to the left of the new menu item, like 
 
 ![(List item)](listitem.png)
 
-It will appear almost transparent untill you hover the mouse over the menu item, or touch it. If you press the icon, you get a new toolbar like this:
+It will appear almost transparent until you hover the mouse over the menu item, or touch it. If you press the icon, you get a new toolbar like this:
 
 ![(List item - Toolbar)](listitem-toolbar.png)
 
@@ -129,5 +129,5 @@ The final trick is the `data-simply-sortable` attribute. If you add this attribu
 
 Start the editor and press-and-hold or touch-and-hold a list item. The item will slant a bit to tell you that it is ready to be moved. Then drag it around and drop it where you want.
 
-The editor is smart about it, it only allows dragging the item in a direction that is usefull. So a menu is usually only draggable horizontally, sidebar menu's only vertically. Very rarely its both. SimplyEdit will figure this out itself, you don't need to do anything for this.
+The editor is smart about it, it only allows dragging the item in a direction that is useful. So a menu is usually only draggable horizontally, sidebar menu's only vertically. Very rarely its both. SimplyEdit will figure this out itself, you don't need to do anything for this.
 
