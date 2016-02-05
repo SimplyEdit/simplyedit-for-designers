@@ -33,6 +33,8 @@ However, you can't save your changes yet. For that you need to do a few more thi
 2. Edit the `index.html` file and, in the script tag at the bottom, replace the string `simplyedit-demo-key` with your new trial key.
 
 3. Make sure that the directories `data/` and `images/` can be written to by the webserver. How to do this depends on where you host your site. Usually you can change the 'owner' of the file to a specific username like `www-data`. Under no circumstance must you make these directories writable by everyone. That is just asking for trouble. If you have trouble here, ask the support desk of your website hosting provider for help, that's what you pay them for.
+
+4. Create a .htpasswd file and add a user to it. If you don't know how to do this and your hosting provider doesn't have a solution for you, you can try [this htpasswd-generator](http://www.htaccesstools.com/htpasswd-generator/). Copy the result and store it one directory up from the website root.
  
 If you have gotten this far, open the website again and start editing. Now when you press save, your changes are stored. Go ahead and reload the site. 
 
