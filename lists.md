@@ -52,7 +52,8 @@ No problem, we'll just make three templates:
             <h1 data-simply-field="Page title">Page title</h1>
         </div>
     </header>
-    <div class="slices" data-simply-list="Content">
+    <div class="slices" data-simply-list="Content"
+    data-simply-sortable>
         <template data-simply-template="Hero Image">
             <div class="hero">
                 <img src="hero.jpg" alt="" data-simply-field="image">
