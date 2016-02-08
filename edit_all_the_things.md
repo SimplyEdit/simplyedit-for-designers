@@ -1,8 +1,28 @@
 # Edit all the things
 
-SimplyEdit is more than an HTML editor. 
+SimplyEdit is more than just an HTML editor. Instead of being limited to a single editable page field, SimplyEdit allows anything to be editable. But only if you say it is.
+
+What this means is that you can create custom and complex HTML structures, that combined with CSS make your page responsive. And then you make only those parts that have content editable.
+
+Now the person editing the page can forget about the complex HTML and just enter a few fields. There's nothing he or she can break, because those parts are not editable:
+
+```html
+<div class="caption light animated wow fadeInDown clearfix">
+	<h1 data-simply-field="title">Simply edit the web</h1>
+	<p data-simply-field="subtitle">It's easy now</p>
+	<hr>
+</div>
+```
+
+This example has two editable fields, a title and a subtitle. The editor understands the rules of HTML. This means that the title can only contain inline elements. There is no way to insert a paragraph, div or - god forbid - a table.
+
+The worst that can happen is that someone inserts a linebreak (`br`).
 
 ## Images
+
+Editable fields aren't limited to HTML elements that can contain text. You can make a single image editable as well:
+
+
 
 ## Links
 
