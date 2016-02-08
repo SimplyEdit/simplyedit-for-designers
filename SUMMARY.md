@@ -6,4 +6,5 @@
 * [An editable menu](editable_menu.md)
 * [Slice your content](lists.md)
 * [Listception](listception.md)
+* Edit all the things
 
