@@ -16,7 +16,7 @@ Now the person editing the page can forget about the complex HTML and just enter
 
 This example has two editable fields, a title and a subtitle. The editor understands the rules of HTML. This means that the title can only contain inline elements. There is no way to insert a paragraph, div or - god forbid - a table.
 
-The worst that can happen is that someone inserts a linebreak (`br`).
+The worst that can happen is that someone inserts a linebreak (`<br>`). The `<hr>` tag is untouchable and the classes on the `<div>` as well.
 
 ## Images
 
