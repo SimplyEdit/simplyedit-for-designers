@@ -1,6 +1,6 @@
 # Edit all the things
 
-SimplyEdit is more than just an HTML editor. Instead of limiting you to a single editable page field, SimplyEdit allows anything to be editable. But only if you say it is.
+SimplyEdit is more than just an HTML editor. It does not limit you to a single editable page field. Instead SimplyEdit allows anything to be editable. But only if you say it is.
 
 This means you can create complex HTML structures to create responsive designs. And then you make only those parts that have content editable.
 
