@@ -7,5 +7,5 @@
 * [An editable menu](editable_menu.md)
 * [Slice your content](lists.md)
 * [Listception](listception.md)
-* I want my tables back
+* [I want my tables back](i_want_my_tables_back.md)
 
