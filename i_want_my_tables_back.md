@@ -54,4 +54,37 @@ Now you can add, change and remove rows of the table. The table design won't be 
 
 Simply design the tables you need for the website you're working on and use these where needed. The table will fit perfectly with your design allways.
 
+*Warning:* You might be tempted to do something like this:
 
+```html
+<tbody data-simply-list="rows">
+    <template data-simply-template="odd">
+        <tr class="odd">
+            <td data-simply-field="todo">Polish shoes</td>
+            <td data-simply-field="due">Today</td>
+        </tr>
+    </template>
+    <template data-simply-template="even">
+        <tr>
+            <td data-simply-field="todo">Polish shoes</td>
+            <td data-simply-field="due">Today</td>
+        </tr>
+    </template>
+</tbody>
+</table>
+```
+
+This allows an editor to create rows with alternating backgrounds for example. However the classes are set when the row is inserted. So deleting a row will mess up the alternating background. The editor can do nothing except delete all remaining rows and insert them again.
+
+In cases like this, always use CSS to get the same result:
+
+```css
+tr:nth-child(odd) {
+    background: #CCC;
+}
+tr:nth-child(even) {
+    background: #FFF;
+}
+```
+
+Now the table will keep its alternating rows no matter how many rows you remove or insert.
