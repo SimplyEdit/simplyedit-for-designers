@@ -4,7 +4,7 @@ If your websites look anything like ours, you're working with lots of javascript
 
 This can lead to problems when you want to edit the page. Its difficult to edit something that won't sit still.
 
-SImplyEdit provides a few tools to help you out.
+SimplyEdit provides a few tools to help you out.
 
 ##data-simply-hidden
 
