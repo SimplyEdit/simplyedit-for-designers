@@ -32,7 +32,7 @@ To make this table editable, while keeping it accessible, we turn the body into 
 
 ```html
 <table>
-<caption>My Todo List</caption>
+<caption data-simply-field="caption">My Todo List</caption>
 <thead>
     <tr>
         <th scope="col">Todo</th>
