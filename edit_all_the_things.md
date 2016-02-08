@@ -22,9 +22,25 @@ The worst that can happen is that someone inserts a line break (`<br>`). The `<h
 
 Editable fields aren't limited to HTML elements that can contain text. You can make a single image editable as well:
 
+```html
+<img src="placeholder.jpg" alt="Alternate text"
+     data-simply-field="A Picture" data-simply-selectable="true">
+```
 
+In addition to the `data-simply-field` attribute, you must also set the `data-simply-selectable` attribute. The image source and the `alt` and `title` attribute are now editable.
 
 ## Links
+
+If you need a link or button to always be there and look the same, but the target may change, you can create an editable anchor or hyperlink:
+
+```html
+<a href="link.html" class="button" title="A title"
+   data-simply-field="The button">Placeholder</a>
+```
+
+The `href`, `title`, `name` attributes and the text content are editable. You can also set the `nofollow` attribute.
+
+Again, the classes on the anchor are fixed in the design. These cannot be changed. The text content is limited to inline styles only. You can fool around with bold, italic and underline. But you can't insert a `<h1>`.
 
 ## Icons
 
