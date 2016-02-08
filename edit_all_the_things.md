@@ -29,8 +29,6 @@ Editable fields aren't limited to HTML elements that can contain text. You can m
 
 The image source and the `alt` and `title` attribute are now editable.
 
-
-
 ## Links
 
 If you need a link or button to always be there and look the same, but the target may change, you can create an editable anchor or hyperlink:
@@ -51,4 +49,8 @@ Originally added as a gimmick and a test of the extendability of SimplyEdit, we 
 ```html
 <i class="fa" data-simply-field="icon"></i>
 ```
+
+This will show a toolbar with an icon button. The button opens a dialog showing all the icons in FontAwesome. When you select one it will replace the existing one. 
+
+*Important:* You must not use the default `fa-*` classes, other than the basic class `fa`. SimplyEdit will insert the correct character directly in the content.  
 
