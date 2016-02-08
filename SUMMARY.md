@@ -8,5 +8,5 @@
 * [Slice your content](lists.md)
 * [Listception](listception.md)
 * [I want my tables back](i_want_my_tables_back.md)
-* Working with dynamic content
+* [Working with dynamic content](working_with_dynamic_content.md)
 
