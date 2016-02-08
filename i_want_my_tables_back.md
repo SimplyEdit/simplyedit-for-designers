@@ -65,7 +65,7 @@ Simply design the tables you need for the website you're working on and use thes
         </tr>
     </template>
     <template data-simply-template="even">
-        <tr>
+        <tr class="even">
             <td data-simply-field="todo">Polish shoes</td>
             <td data-simply-field="due">Today</td>
         </tr>
