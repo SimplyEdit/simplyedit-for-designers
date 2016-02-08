@@ -24,10 +24,12 @@ Editable fields aren't limited to HTML elements that can contain text. You can m
 
 ```html
 <img src="placeholder.jpg" alt="Alternate text"
-     data-simply-field="A Picture" data-simply-selectable="true">
+     data-simply-field="A Picture">
 ```
 
-In addition to the `data-simply-field` attribute, you must also set the `data-simply-selectable` attribute. The image source and the `alt` and `title` attribute are now editable.
+The image source and the `alt` and `title` attribute are now editable.
+
+
 
 ## Links
 
@@ -42,5 +44,11 @@ The `href`, `title`, `name` attributes and the text content are editable. You ca
 
 Again, the classes on the anchor are fixed in the design. These cannot be changed. The text content is limited to inline styles only. You can fool around with bold, italic and underline. But you can't insert a `<h1>`.
 
-## Icons
+## FontAwesome Icons
+
+Originally added as a gimmick and a test of the extendability of SimplyEdit, we found it just too useful to exclude.
+
+```html
+<i class="fa" data-simply-field="icon"></i>
+```
 
