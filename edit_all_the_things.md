@@ -1,4 +1,4 @@
-# Edit all the things
+# Edit _ALL_ the things
 
 SimplyEdit is more than just an HTML editor. It does not limit you to a single editable page field. Instead SimplyEdit allows anything to be editable. But only if you say it is.
 
