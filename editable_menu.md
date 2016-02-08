@@ -1,6 +1,6 @@
 # An editable menu
 
-The previous chapter showed how to create your own design and make it editable. This chapter expands on that and shows how to make your site's menu editable as well.
+The previous chapters showed how to create your own design and make it editable. This chapter expands on that and shows how to make your site's menu editable as well.
 
 Most navigation menu's look something like this, in HTML:
 
