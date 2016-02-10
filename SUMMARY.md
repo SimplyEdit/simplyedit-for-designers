@@ -10,4 +10,5 @@
 * [I want my tables back](i_want_my_tables_back.md)
 * [Working with dynamic content](working_with_dynamic_content.md)
 * Styling the editor
+* Responsive Images
 
