@@ -4,7 +4,7 @@ In the previous chapter you created a website and made it editable with SimplyEd
 
 The first step is to open the `index.html` file. You'll need to be familiar with how HTML works, but you don't need to write HTML by hand. You can use any tool you like and are comfortable with.
 
-HTML works by inserting tags into your content. These tags tell the browser how to render the content. In addition tags can also have attributes. These are like meta-data, telling the browser extra stuff about the tag and the content.
+HTML works by inserting tags into your content. These tags tell the browser how to render the content. Tags can also have attributes. These are like meta-data, telling the browser extra stuff about the tag and the content.
 
 SimplyEdit uses '*data attributes*' to make it work. It is your job as the designer to add these at the correct spot in the HTML.
 
@@ -16,9 +16,9 @@ Some examples:
 <h1 data-simply-field="title">This is a title</h1>
 ```
 
-This tells SimplyEdit that the `<h1>` tag should have the content named `title`. The text "This is a title" is only a placeholder now. SimplyEdit will get the data for this page, retrieve the field with the name 'title' and overwrite the placeholder with the fields content.
+This tells SimplyEdit that the `<h1>` tag should have the content named `title`. The text "This is a title" is only a placeholder now. SimplyEdit will get the data for this page and retrieve the field with the name 'title'. Then it overwrites the placeholder with the fields content.
 
-So the `index.html` is now a *template* instead of the actual web page.
+The file `index.html` is now a *template* instead of the actual web page.
 
 ```html
 <body>
