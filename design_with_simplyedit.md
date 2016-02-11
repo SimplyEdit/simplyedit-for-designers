@@ -32,7 +32,7 @@ The file `index.html` is now a *template* instead of the actual web page.
 </body>
 ```
 
-You are not limited to predefined names for the fields. You can use as many or few as you like and name them however you like. Just remember to follow the rules for attribute values in HTML:
+You are not limited to predefined names for the fields. You can use as many or few as you like and name them whatever you like. Just remember to follow the rules for attribute values in HTML:
 - don't use quotes, use &amp;quot; if you must
 - don't use &lt; or &gt;
 - anything else is ok 
