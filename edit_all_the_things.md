@@ -52,5 +52,5 @@ Originally added as a gimmick and a test of the extendability of SimplyEdit, we 
 
 This will show a toolbar with an icon button. The button opens a dialog showing all the icons in FontAwesome. When you select one it will replace the existing one. 
 
-> *Important:* You must not use the default `fa-*` classes, other than the basic class `fa`. SimplyEdit will insert the correct character directly in the content.  
+> Note: You must not use the default `fa-*` classes, other than the basic class `fa`. SimplyEdit will insert the correct character directly in the content.  
 
