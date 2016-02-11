@@ -56,7 +56,7 @@ The `data-simply-list` attribute tells SimplyEdit that the contents are a list o
 
 SimplyEdit sees the template tag, and takes its contents and applies it to each element in the list. Just as if each element was a separate page.
 
-So you can use a `data-simply-field` inside a list template, just like on any other tag in the page.
+You can use a `data-simply-field` inside a list template, just like on any other tag in the page.
 
 If the list is empty, nothing is shown. Only when you are editing the page, you'll see a message like this in the place of the empty list:
 
