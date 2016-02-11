@@ -40,9 +40,11 @@ If you have gotten this far, open the website again and start editing. Now when 
 
 ##Where is your data?
 
-SimplyEdit works different from almost all other CMS systems. Instead of a lot of code and a database that all run on the server to create and render your page. A SimplyEdit website only stores your data in a single file on the server. When you open your website, the HTML page contains just enough information to tell SimplyEdit what your site design looks like. Then SimplyEdit grabs your data and uses this data to fill in the placeholders in your HTML and render your website.
+SimplyEdit works different from almost all other CMS systems. Instead of a lot of code and a database that all run on the server to create and render your page. 
+
+A SimplyEdit website only stores your data in a single file on the server. The HTML page contains just enough information to tell SimplyEdit what your site looks like. Then SimplyEdit grabs your data and uses this data to fill in the placeholders in your HTML and render your website.
 
 This all happens in your browser, not on the server.
 
-So if you take a look behind the curtains and view the source of your web page, you'll see that none of the editing changes you made are actually in there. All these changes are instead stored in the file `data/data.json`. If you open this file, you'll see all the changes you made. Now forget about it and close it. You don't need it anymore.
+If you take a look behind the curtains and view the source of your web page, you'll see that none of the editing changes you made are actually in there. All these changes are instead stored in the file `data/data.json`. If you open this file, you'll see all the changes you made. Now forget about it and close it. You don't need it anymore.
 
