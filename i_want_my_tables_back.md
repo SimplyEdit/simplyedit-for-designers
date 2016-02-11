@@ -74,7 +74,7 @@ Simply design the tables you need for the website you're working on and use thes
 </table>
 ```
 
-This allows an editor to create rows with alternating backgrounds for example. However the classes are set when the row is inserted. So deleting a row will mess up the alternating background. The editor can do nothing except delete all remaining rows and insert them again.
+This allows an editor to create rows with alternating backgrounds for example. However the classes are set when the row is inserted. Deleting a row will mess up the alternating background. You can only delete all remaining rows and insert them again to fix it.
 
 In cases like this, always use CSS to get the same result:
 
