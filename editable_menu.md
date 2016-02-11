@@ -36,7 +36,7 @@ This will work, but there is a problem: You can't remove a menu item, or add a n
 
 ##data-simply-list
 
-So instead, we'll use a new trick: `data-simply-list`.
+Instead, we'll use a new trick: `data-simply-list`.
 
 ```html
 <nav>
